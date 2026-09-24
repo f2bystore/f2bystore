@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>f2bystore - Konveksi & Apparel Custom Seragam Kerja</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            dark: '#0f172a'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .image-ratio {
+            position: relative;
+            width: 100%;
+            padding-top: 100%; /* 1:1 Aspect Ratio */
+            background-color: #f1f5f9;
+            overflow: hidden;
+        }
+        .image-ratio img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-green-500 selection:text-white">
+
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="bg-slate-900 text-white font-black text-xl px-3.5 py-2 rounded-xl shadow-md tracking-wider">
+                    f2<span class="text-green-500">by</span>store
+                </div>
+                <span class="hidden sm:inline-block text-xs font-semibold uppercase tracking-wider bg-slate-100 text-slate-600 px-2.5 py-1 rounded-full border border-slate-200">Konveksi & Apparel</span>
+            </div>
+            <div class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-600">
+                <a href="#katalog" class="hover:text-green-600 transition">Katalog Produk</a>
+                <a href="#keunggulan" class="hover:text-green-600 transition">Keunggulan</a>
+                <a href="#testimoni" class="hover:text-green-600 transition">Testimoni</a>
+            </div>
+            <div>
+                <a href="https://wa.me/6282295332623?text=Halo%20f2bystore,%20saya%20ingin%20konsultasi%20pembuatan%20seragam." target="_blank" class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-green-600/20 transition-all transform hover:-translate-y-0.5">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    WhatsApp Kami
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative bg-slate-900 text-white overflow-hidden py-24 lg:py-32">
+        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#22c55e_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-green-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-flex items-center gap-2 bg-slate-800 text-green-400 border border-slate-700 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase mb-6 shadow-inner">
+                <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                Konveksi & Apparel Profesional Terpercaya
+            </span>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight max-w-4xl mx-auto leading-tight mb-6">
+                Pusat Pembuatan Seragam Kerja & Dinas Custom Berkualitas
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Solusi konveksi terbaik untuk kebutuhan seragam kantor, pakaian dinas harian (PDH), lapangan (PDL), safety wearpack, hingga bordil komputer instansi Anda.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://wa.me/6282295332623?text=Halo%20f2bystore,%20saya%20ingin%20konsultasi%20pembuatan%20seragam." target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-green-600 hover:bg-green-500 text-white font-bold px-8 py-4 rounded-2xl shadow-xl shadow-green-600/30 transition-all transform hover:-translate-y-1 text-base">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    Konsultasi Gratis via WhatsApp
+                </a>
+                <a href="#katalog" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold px-8 py-4 rounded-2xl border border-slate-700 transition-all text-base">
+                    Lihat Katalog Produk
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="katalog" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">Katalog Produk Unggulan</h2>
+            <p class="text-slate-600 text-base sm:text-lg">Berbagai jenis pakaian seragam berkualitas tinggi dengan folder lokal images/ yang dirancang khusus untuk kenyamanan dan ketahanan maksimal.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- 1. Kantor -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-200/80 transition-all duration-300 flex flex-col group">
+                <div class="image-ratio">
+                    <img src="images/kantor.jpg" alt="Seragam Kantor" class="group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='https://placehold.co/600x600/e2e8f0/475569?text=images/kantor.jpg';">
+                    <div class="absolute top-4 right-4 bg-slate-900/80 backdrop-blur text-white text-xs font-semibold px-3 py-1.5 rounded-full z-10">Formal</div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Seragam Kantor</h3>
+                    <p class="text-slate-600 text-sm mb-6 flex-grow">Kemeja kerja formal untuk karyawan perusahaan dengan hasil jahitan rapi, bahan adem, dan nyaman dipakai seharian.</p>
+                    <a href="https://wa.me/6282295332623?text=Halo%20f2bystore,%20saya%20tertarik%20pesan%20Seragam%20Kantor." target="_blank" class="w-full bg-slate-100 hover:bg-green-600 hover:text-white text-slate-800 font-semibold py-3 px-4 rounded-xl text-center transition-colors">
+                        Tanya Produk Ini
+                    </a>
+                </div>
+            </div>
+
+            <!-- 2. PDH -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-200/80 transition-all duration-300 flex flex-col group">
+                <div class="image-ratio">
+                    <img src="images/pdh.jpg" alt="Pakaian Dinas Harian (PDH)" class="group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='https://placehold.co/600x600/e2e8f0/475569?text=images/pdh.jpg';">
+                    <div class="absolute top-4 right-4 bg-slate-900/80 backdrop-blur text-white text-xs font-semibold px-3 py-1.5 rounded-full z-10">Instansi Resmi</div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Pakaian Dinas Harian (PDH)</h3>
+                    <p class="text-slate-600 text-sm mb-6 flex-grow">Seragam instansi pemerintah dan lembaga resmi dengan standar ketentuan kedinasan yang rapi dan profesional.</p>
+                    <a href="https://wa.me/6282295332623?text=Halo%20f2bystore,%20saya%20tertarik%20pesan%20PDH." target="_blank" class="w-full bg-slate-100 hover:bg-green-600 hover:text-white text-slate-800 font-semibold py-3 px-4 rounded-xl text-center transition-colors">
+                        Tanya Produk Ini
+                    </a>
+                </div>
+            </div>
+
+            <!-- 3. PDL -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-200/80 transition-all duration-300 flex flex-col group">
+                <div class="image-ratio">
+                    <img src="images/pdl.jpg" alt="Pakaian Dinas Lapangan (PDL)" class="group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='https://placehold.co/600x600/e2e8f0/475569?text=images/pdl.jpg';">
+                    <div class="absolute top-4 right-4 bg-slate-900/80 backdrop-blur text-white text-xs font-semibold px-3 py-1.5 rounded-full z-10">Outdoor Kuat</div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Pakaian Dinas Lapangan (PDL)</h3>
+                    <p class="text-slate-600 text-sm mb-6 flex-grow">Pakaian khusus untuk kegiatan luar ruangan dengan bahan kuat, awet, dan fungsional di berbagai medan kerja.</p>
+                    <a href="https://wa.me/6282295332623?text=Halo%20f2bystore,%20saya%20tertarik%20pesan%20PDL." target="_blank" class="w-full bg-slate-100 hover:bg-green-600 hover:text-white text-slate-800 font-semibold py-3 px-4 rounded-xl text-center transition-colors">
+                        Tanya Produk Ini
+                    </a>
+                </div>
+            </div>
+
+            <!-- 4. Wearpack -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-200/80 transition-all duration-300 flex flex-col group">
+                <div class="image-ratio">
+                    <img src="images/wearpack.jpg" alt="Wearpack Safety" class="group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='https://placehold.co/600x600/e2e8f0/475569?text=images/wearpack.jpg';">
+                    <div class="absolute top-4 right-4 bg-slate-900/80 backdrop-blur text-white text-xs font-semibold px-3 py-1.5 rounded-full z-10">Safety Kerja</div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Wearpack & Safety</h3>
+                    <p class="text-slate-600 text-sm mb-6 flex-grow">Baju keselamatan kerja industri, bengkel, dan proyek tambang dengan perlindungan maksimal dan bahan tebal.</p>
+                    <a href="https://wa.me/6282295332623?text=Halo%20f2bystore,%20saya%20tertarik%20pesan%20Wearpack." target="_blank" class="w-full bg-slate-100 hover:bg-green-600 hover:text-white text-slate-800 font-semibold py-3 px-4 rounded-xl text-center transition-colors">
+                        Tanya Produk Ini
+                    </a>
+                </div>
+            </div>
+
+            <!-- 5. Bordil -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-slate-200/80 transition-all duration-300 flex flex-col group lg:col-span-2 lg:max-w-md lg:mx-auto w-full">
+                <div class="image-ratio">
+                    <img src="images/bordil.jpg" alt="Jasa Bordil Custom" class="group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='https://placehold.co/600x600/e2e8f0/475569?text=images/bordil.jpg';">
+                    <div class="absolute top-4 right-4 bg-slate-900/80 backdrop-blur text-white text-xs font-semibold px-3 py-1.5 rounded-full z-10">Presisi Komputer</div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Jasa Bordil Komputer Custom</h3>
+                    <p class="text-slate-600 text-sm mb-6 flex-grow">Layanan bordir logo instansi, tulisan nama, dan atribut perusahaan dengan hasil presisi tinggi dan warna tajam.</p>
+                    <a href="https://wa.me/6282295332623?text=Halo%20f2bystore,%20saya%20tertarik%20dengan%20Jasa%20Bordil%20Custom." target="_blank" class="w-full bg-slate-100 hover:bg-green-600 hover:text-white text-slate-800 font-semibold py-3 px-4 rounded-xl text-center transition-colors">
+                        Tanya Produk Ini
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <section id="keunggulan" class="bg-slate-900 text-white py-20 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4">Mengapa Memilih f2bystore?</h2>
+                <p class="text-slate-400 text-base">Kami berkomitmen memberikan kualitas terbaik untuk setiap helai pakaian seragam Anda.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-800/80 border border-slate-700/80 p-8 rounded-3xl backdrop-blur">
+                    <div class="w-12 h-12 rounded-2xl bg-green-500/10 text-green-400 flex items-center justify-center font-bold text-xl mb-6">✨</div>
+                    <h3 class="text-xl font-bold mb-3">Bahan Premium Pilihan</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Menggunakan jenis kain berkualitas tinggi yang adem, tidak mudah berbulu, awet, dan nyaman dipakai seharian penuh.</p>
+                </div>
+                <div class="bg-slate-800/80 border border-slate-700/80 p-8 rounded-3xl backdrop-blur">
+                    <div class="w-12 h-12 rounded-2xl bg-green-500/10 text-green-400 flex items-center justify-center font-bold text-xl mb-6">🪡</div>
+                    <h3 class="text-xl font-bold mb-3">Jahitan Standar Garment</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Dikerjakan oleh tenaga penjahit profesional berpengalaman dengan kontrol kualitas ketat di setiap detail jahitannya.</p>
+                </div>
+                <div class="bg-slate-800/80 border border-slate-700/80 p-8 rounded-3xl backdrop-blur">
+                    <div class="w-12 h-12 rounded-2xl bg-green-500/10 text-green-400 flex items-center justify-center font-bold text-xl mb-6">⚡</div>
+                    <h3 class="text-xl font-bold mb-3">Tepat Waktu & Harga Terbaik</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Pengerjaan pesanan selalu diselesaikan tepat waktu sesuai deadline dengan penawaran harga kompetitif untuk grosir maupun eceran.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimoni" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">Testimoni Pelanggan</h2>
+            <p class="text-slate-600 text-base">Apa kata mereka yang sudah memesan di f2bystore?</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="flex text-amber-400 mb-4 gap-1">★★★★★</div>
+                    <p class="text-slate-600 text-sm italic mb-6">"Pesen seragam kantor buat 50 orang di f2bystore hasilnya mantap banget! Bahan adem, bordiran rapi, dan tepat waktu sesuai deadline."</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-900 text-sm">Bpk. Rahmat</h4>
+                    <span class="text-xs text-slate-500">HRD Perusahaan Swasta</span>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="flex text-amber-400 mb-4 gap-1">★★★★★</div>
+                    <p class="text-slate-600 text-sm italic mb-6">"Udah langganan bikin PDH instansi di sini. Kualitas jahitannya standar garment asli, kokoh dan rapi. Recommended banget!"</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-900 text-sm">Ibu Diana</h4>
+                    <span class="text-xs text-slate-500">Bendahara Instansi Pemerintahan</span>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="flex text-amber-400 mb-4 gap-1">★★★★★</div>
+                    <p class="text-slate-600 text-sm italic mb-6">"Wearpack dan kemeja lapangan buat tim proyek kami juara! Bahan kuat tapi tetap nyaman dipakai panas-panasan di lapangan."</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-900 text-sm">Bpk. Hendra</h4>
+                    <span class="text-xs text-slate-500">Project Manager Konstruksi</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/6282295332623?text=Halo%20f2bystore,%20saya%20mau%20konsultasi%20pembuatan%20seragam." target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-600 hover:bg-green-500 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center transition-all transform hover:scale-110 active:scale-95" title="Chat WhatsApp f2bystore">
+        <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    </a>
+
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-white font-extrabold text-2xl mb-3 tracking-wider">
+                f2<span class="text-green-500">by</span>store
+            </div>
+            <p class="text-sm text-slate-400 max-w-md mx-auto mb-6">Pusat konveksi & apparel seragam kerja custom berkualitas tinggi untuk instansi dan perusahaan.</p>
+            <p class="text-xs text-slate-600">&copy; 2026 f2bystore Apparel. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
